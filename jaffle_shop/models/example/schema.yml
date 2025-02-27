@@ -19,3 +19,20 @@ models:
         data_tests:
           - unique
           - not_null
+
+  - name: customers
+    description: "This model contains customer information."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer."
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "The customer's first name."
+        tests:
+          - not_null
+      - name: last_name
+        description: "The customer's last name."
+        tests:
+          - not_null

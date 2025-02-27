@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "postgres"."public"."customersData";
+    -- dbt seed --
+    
+          insert into "postgres"."public"."customersData" ("customer_id", "first_name", "last_name") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+
+;
+  

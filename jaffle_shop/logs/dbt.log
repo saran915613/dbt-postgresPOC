@@ -26628,3 +26628,358 @@ drop table if exists "postgres"."public"."orders__dbt_backup" cascade
 [0m22:34:46.742904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028d7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028e0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028e0250>]}
 [0m22:34:46.743064 [debug] [MainThread]: Flushing usage events
 [0m22:34:47.012335 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:58.861840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a24e410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2a6290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2c3f10>]}
+
+
+============================== 11:48:58.864738 | a3a212d6-3802-4387-a9ff-4de273e473a7 ==============================
+[0m11:48:58.864738 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:48:58.865090 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/celestial/.dbt', 'log_path': '/Users/celestial/100xdev/jaffle_shop/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:59.236109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a3a212d6-3802-4387-a9ff-4de273e473a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a273390>]}
+[0m11:48:59.259670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a3a212d6-3802-4387-a9ff-4de273e473a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107124590>]}
+[0m11:48:59.260143 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:48:59.324229 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:48:59.392281 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:48:59.392623 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://models/example/employee.sql
+[0m11:48:59.469243 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.jaffle_shop.employee' (models/example/employee.sql) depends on a source named 'fivetran_SFTP_source.employee' which was not found
+[0m11:48:59.470993 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.6435667, "process_in_blocks": "0", "process_kernel_time": 0.174444, "process_mem_max_rss": "109445120", "process_out_blocks": "0", "process_user_time": 0.816416}
+[0m11:48:59.471224 [debug] [MainThread]: Command `dbt docs generate` failed at 11:48:59.471180 after 0.64 seconds
+[0m11:48:59.471420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a23bf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2c3c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2a61d0>]}
+[0m11:48:59.471601 [debug] [MainThread]: Flushing usage events
+[0m11:48:59.732740 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:50:59.271500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a13b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1a75d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1c3d10>]}
+
+
+============================== 11:50:59.274261 | 90e5f202-2297-4839-afbd-6995b255e2cc ==============================
+[0m11:50:59.274261 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:50:59.274585 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/celestial/100xdev/jaffle_shop/logs', 'version_check': 'True', 'profiles_dir': '/Users/celestial/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:50:59.362651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2c3c90>]}
+[0m11:50:59.386837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070afc90>]}
+[0m11:50:59.387482 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:50:59.435010 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:50:59.496685 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m11:50:59.497004 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://models/example/employee.sql
+[0m11:50:59.497228 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/example/schema.yml
+[0m11:50:59.651773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a831a50>]}
+[0m11:50:59.665055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b53b490>]}
+[0m11:50:59.665336 [info ] [MainThread]: Found 6 models, 8 data tests, 1 seed, 1 source, 431 macros
+[0m11:50:59.665496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afbea50>]}
+[0m11:50:59.666542 [info ] [MainThread]: 
+[0m11:50:59.666705 [info ] [MainThread]: Concurrency: 3 threads (target='dev')
+[0m11:50:59.666830 [info ] [MainThread]: 
+[0m11:50:59.667056 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:50:59.668877 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_public'
+[0m11:50:59.705852 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m11:50:59.706053 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m11:50:59.706178 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:50:59.895216 [debug] [ThreadPool]: SQL status: BEGIN in 0.189 seconds
+[0m11:50:59.895603 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m11:50:59.895872 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:50:59.918463 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.022 seconds
+[0m11:50:59.921050 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m11:50:59.922086 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m11:50:59.927621 [debug] [MainThread]: Using postgres connection "master"
+[0m11:50:59.927958 [debug] [MainThread]: On master: BEGIN
+[0m11:50:59.928157 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:50:59.944769 [debug] [MainThread]: SQL status: BEGIN in 0.017 seconds
+[0m11:50:59.945138 [debug] [MainThread]: Using postgres connection "master"
+[0m11:50:59.945428 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:50:59.952697 [debug] [MainThread]: SQL status: SELECT 1 in 0.007 seconds
+[0m11:50:59.953788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '90e5f202-2297-4839-afbd-6995b255e2cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5e1390>]}
+[0m11:50:59.954083 [debug] [MainThread]: On master: ROLLBACK
+[0m11:50:59.954553 [debug] [MainThread]: On master: Close
+[0m11:50:59.957725 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m11:50:59.957989 [debug] [Thread-2 (]: Began running node model.jaffle_shop.employee
+[0m11:50:59.958199 [debug] [Thread-3 (]: Began running node model.jaffle_shop.my_first_dbt_model
+[0m11:50:59.958594 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_public, now model.jaffle_shop.customers)
+[0m11:50:59.958897 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.jaffle_shop.employee'
+[0m11:50:59.959209 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.jaffle_shop.my_first_dbt_model'
+[0m11:50:59.959428 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m11:50:59.959643 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.employee
+[0m11:50:59.959846 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.my_first_dbt_model
+[0m11:50:59.965138 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m11:50:59.967285 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.employee"
+[0m11:50:59.969691 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+[0m11:50:59.970325 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.employee
+[0m11:50:59.970748 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.employee
+[0m11:50:59.970974 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m11:50:59.971231 [debug] [Thread-2 (]: Began running node model.jaffle_shop.orders
+[0m11:50:59.971507 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.my_first_dbt_model
+[0m11:50:59.971889 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m11:50:59.972139 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.employee, now model.jaffle_shop.orders)
+[0m11:50:59.972578 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.my_first_dbt_model
+[0m11:50:59.972831 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.customersData
+[0m11:50:59.973202 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.orders
+[0m11:50:59.973590 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m11:50:59.974118 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.customers, now seed.jaffle_shop.customersData)
+[0m11:50:59.977103 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.orders"
+[0m11:50:59.977520 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.my_first_dbt_model, now test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d)
+[0m11:50:59.977869 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.customersData
+[0m11:50:59.978283 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m11:50:59.979979 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.customersData
+[0m11:50:59.986294 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.orders
+[0m11:50:59.989634 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m11:50:59.990269 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.customersData
+[0m11:50:59.990796 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.orders
+[0m11:50:59.991205 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_customers_first_name.602d132c3b
+[0m11:50:59.991625 [debug] [Thread-2 (]: Began running node test.jaffle_shop.not_null_customers_last_name.3900f94ffb
+[0m11:50:59.992002 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.customersData, now test.jaffle_shop.not_null_customers_first_name.602d132c3b)
+[0m11:50:59.992322 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.orders, now test.jaffle_shop.not_null_customers_last_name.3900f94ffb)
+[0m11:50:59.992576 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m11:50:59.992839 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_customers_first_name.602d132c3b
+[0m11:50:59.993097 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.not_null_customers_last_name.3900f94ffb
+[0m11:50:59.993540 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m11:50:59.996880 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_first_name.602d132c3b"
+[0m11:50:59.999931 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_last_name.3900f94ffb"
+[0m11:51:00.000204 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m11:51:00.000621 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m11:51:00.000936 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m11:51:00.001151 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.not_null_customers_last_name.3900f94ffb
+[0m11:51:00.001382 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_customers_first_name.602d132c3b
+[0m11:51:00.005929 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m11:51:00.006540 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.not_null_customers_last_name.3900f94ffb
+[0m11:51:00.006999 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_customers_first_name.602d132c3b
+[0m11:51:00.007350 [debug] [Thread-2 (]: Began running node model.jaffle_shop.my_second_dbt_model
+[0m11:51:00.007677 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710
+[0m11:51:00.008053 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_last_name.3900f94ffb, now model.jaffle_shop.my_second_dbt_model)
+[0m11:51:00.008317 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m11:51:00.008585 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_first_name.602d132c3b, now test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m11:51:00.008827 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.my_second_dbt_model
+[0m11:51:00.009185 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m11:51:00.009388 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710
+[0m11:51:00.011308 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+[0m11:51:00.011574 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321
+[0m11:51:00.014545 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m11:51:00.014931 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1, now test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321)
+[0m11:51:00.015262 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321
+[0m11:51:00.015470 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.my_second_dbt_model
+[0m11:51:00.018002 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321"
+[0m11:51:00.018224 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710
+[0m11:51:00.018555 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.my_second_dbt_model
+[0m11:51:00.018958 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710
+[0m11:51:00.019202 [debug] [Thread-2 (]: Began running node model.jaffle_shop.cust
+[0m11:51:00.019473 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321
+[0m11:51:00.019696 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778
+[0m11:51:00.019967 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.my_second_dbt_model, now model.jaffle_shop.cust)
+[0m11:51:00.020335 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321
+[0m11:51:00.020544 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_my_first_dbt_model_id.5fb22c2710, now test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778)
+[0m11:51:00.020755 [debug] [Thread-2 (]: Began compiling node model.jaffle_shop.cust
+[0m11:51:00.020968 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493
+[0m11:51:00.021175 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778
+[0m11:51:00.023113 [debug] [Thread-2 (]: Writing injected SQL for node "model.jaffle_shop.cust"
+[0m11:51:00.023372 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_my_first_dbt_model_id.16e066b321, now test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493)
+[0m11:51:00.025648 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778"
+[0m11:51:00.025894 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493
+[0m11:51:00.029196 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493"
+[0m11:51:00.029485 [debug] [Thread-2 (]: Began executing node model.jaffle_shop.cust
+[0m11:51:00.029852 [debug] [Thread-2 (]: Finished running node model.jaffle_shop.cust
+[0m11:51:00.031421 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493
+[0m11:51:00.031745 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493
+[0m11:51:00.031907 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778
+[0m11:51:00.032244 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778
+[0m11:51:00.032783 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:51:00.032927 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m11:51:00.033053 [debug] [MainThread]: Connection 'model.jaffle_shop.cust' was properly closed.
+[0m11:51:00.033173 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m11:51:00.034216 [debug] [MainThread]: Command end result
+[0m11:51:00.080797 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/celestial/100xdev/jaffle_shop/target/manifest.json
+[0m11:51:00.082912 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/celestial/100xdev/jaffle_shop/target/semantic_manifest.json
+[0m11:51:00.086290 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/celestial/100xdev/jaffle_shop/target/run_results.json
+[0m11:51:00.088598 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m11:51:00.088761 [info ] [MainThread]: Building catalog
+[0m11:51:00.093237 [debug] [ThreadPool]: Acquiring new postgres connection 'postgres.information_schema'
+[0m11:51:00.097840 [debug] [ThreadPool]: Using postgres connection "postgres.information_schema"
+[0m11:51:00.098141 [debug] [ThreadPool]: On postgres.information_schema: BEGIN
+[0m11:51:00.098297 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:51:00.134810 [debug] [ThreadPool]: SQL status: BEGIN in 0.036 seconds
+[0m11:51:00.135037 [debug] [ThreadPool]: Using postgres connection "postgres.information_schema"
+[0m11:51:00.135244 [debug] [ThreadPool]: On postgres.information_schema: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "postgres.information_schema"} */
+
+    
+    
+
+    select
+        'postgres' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('cust')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('my_first_dbt_model')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('customersData')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('my_second_dbt_model')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('employee')) or (upper(sch.nspname) = upper('sftp') and
+           upper(tbl.relname) = upper('employee')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('orders')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m11:51:00.142259 [debug] [ThreadPool]: SQL status: SELECT 15 in 0.007 seconds
+[0m11:51:00.144528 [debug] [ThreadPool]: On postgres.information_schema: ROLLBACK
+[0m11:51:00.144773 [debug] [ThreadPool]: On postgres.information_schema: Close
+[0m11:51:00.182865 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/celestial/100xdev/jaffle_shop/target/catalog.json
+[0m11:51:00.194675 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/celestial/100xdev/jaffle_shop/target/manifest.json
+[0m11:51:00.195570 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/celestial/100xdev/jaffle_shop/target/semantic_manifest.json
+[0m11:51:00.195722 [info ] [MainThread]: Catalog written to /Users/celestial/100xdev/jaffle_shop/target/catalog.json
+[0m11:51:00.197157 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.9601983, "process_in_blocks": "0", "process_kernel_time": 0.204344, "process_mem_max_rss": "124108800", "process_out_blocks": "0", "process_user_time": 1.088304}
+[0m11:51:00.197397 [debug] [MainThread]: Command `dbt docs generate` succeeded at 11:51:00.197350 after 0.96 seconds
+[0m11:51:00.197556 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m11:51:00.197673 [debug] [MainThread]: Connection 'postgres.information_schema' was properly closed.
+[0m11:51:00.197820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc4710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fb7c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b456550>]}
+[0m11:51:00.198012 [debug] [MainThread]: Flushing usage events
+[0m11:51:00.429750 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:28.572939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10753bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bf190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bf650>]}
+
+
+============================== 11:52:28.575761 | f4a79d3e-e350-43a7-9922-a01c1399cb8c ==============================
+[0m11:52:28.575761 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:52:28.576076 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/celestial/100xdev/jaffle_shop/logs', 'debug': 'False', 'profiles_dir': '/Users/celestial/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:28.667905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f4a79d3e-e350-43a7-9922-a01c1399cb8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075dbfd0>]}
+[0m11:52:28.691655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f4a79d3e-e350-43a7-9922-a01c1399cb8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045b81d0>]}
+[0m12:01:21.698709 [error] [MainThread]: Encountered an error:
+
+[0m12:01:21.713542 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/celestial/100xdev/dbtVenv/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m12:01:21.728523 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 533.19763, "process_in_blocks": "0", "process_kernel_time": 0.19751, "process_mem_max_rss": "102416384", "process_out_blocks": "0", "process_user_time": 0.714208}
+[0m12:01:21.729464 [debug] [MainThread]: Command `dbt docs serve` failed at 12:01:21.729317 after 533.20 seconds
+[0m12:01:21.730463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10753bf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075db990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075d9810>]}
+[0m12:01:21.731220 [debug] [MainThread]: Flushing usage events
+[0m12:01:21.987249 [debug] [MainThread]: An error was encountered while trying to flush usage events
